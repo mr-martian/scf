@@ -1,0 +1,49 @@
+#This file accompanies the program Dr. Smock.  It contains the names of the 
+#various directories and files that Dr. Smock deals with.  Only change the 
+#stuff between the quotes.
+
+#specify the unix directory in which to look for the TOC files:
+$TOCdir = "/usr/new/lib/httpd/documents/dr.math/tocs/";
+
+
+	#specify the same directory as above, but as it will appear in URLs:
+	$funcTOCdir = "/dr.math/tocs/";
+
+#specify the directory in which to look for the text files:
+$TEXTdir = "/usr/new/lib/httpd/documents/dr.math/text/";
+
+#specify the directory in which to write the ftp files:
+$FTPdir = "/news/ftp/dr.math/";
+
+
+#specify the directory that will contain the HTML files:
+$HTMLdir = "/usr/new/lib/httpd/documents/dr.math/problems/";
+
+
+	#specify the same directory as above, but as it will appear in URLs:
+	$funcHTMLdir = "/dr.math/problems/";
+
+#specify the file to use for a header in the HTML pages:
+$head = "/usr/users/ken/header";
+
+#specify the file to use for a footer in the HTML pages:
+$foot = "/usr/users/ken/trailer";
+
+#specify the full pathname of the searcher document that will be created:
+$searcher = "/usr/users/sarah/desc/drmathall.html";
+
+
+#specify the file in which to write the error log of what goes wrong in the
+#archiving process:
+$error_log_file = "/usr/users/sarah/smock.errors";
+
+
+#specify the file in which to write the list of new HTML files, so that they
+#can be tested manually:
+$testlinksfile = "/usr/users/sarah/public_html/new.dr.links.html";
+
+
+	#specify the same file as above, but as it would appear in URLs:
+	$func_testlinksfile = "/~sarah/new.dr.links.html";
+	
+	
