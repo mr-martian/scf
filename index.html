@@ -8,8 +8,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
-.HomeSlideshow {display: none}
+.Slideshow {display: none}
 </style>
+<head>
+  <!-- <script src="/org/scf/carousel.js"></script> -->
+</head>
 <body>
 
 <!-- Navigation Bar -->
@@ -25,22 +28,29 @@ body {font-family: "Lato", sans-serif}
 <!-- Home Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:0px">
 
-  <!-- Automatic HomeSlideshow Images -->
-  <div class="HomeSlideshow w3-display-container w3-center">
+  <!-- Automatic Slideshow Images -->
+  <div class="Slideshow w3-display-container w3-center">
     <img src="/org/scf/photos/16_17/chapter17_tree.jpg" style="width:100%" title="">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Chapter Camp 2017</h3>
-      <p><b> May 13-19, 2017</b></p>
+      <p><b>May 13-19, 2017</b></p>
     </div>
   </div>
-  <div class="HomeSlideshow w3-display-container w3-center">
+  <div class="Slideshow w3-display-container w3-center">
+    <img src="/org/scf/photos/16_17/chapter17_woods.jpg" style="width:100%" title="">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chapter Camp 2017</h3>
+      <p><b>May 13-19, 2017</b></p>
+    </div>
+  </div>
+  <div class="Slideshow w3-display-container w3-center">
     <img src="/org/scf/photos/16_17/banquet17_funny.jpg" style="width:100%" title="">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Welcoming Banquet 2017</h3>
       <p><b>March 25, 2017</b></p>
     </div>
   </div>
-  <div class="HomeSlideshow w3-display-container w3-center">
+  <div class="Slideshow w3-display-container w3-center">
     <img src="/org/scf/photos/16_17/easter17.jpg" style="width:100%" title="">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Easter Dinner 2017</h3>
@@ -48,24 +58,22 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 <!-- End Page Content -->
-</div>
-
 
 <script>
-// Automatic HomeSlideshow - change image every 6 seconds
-var myIndex = 0;
+var index = 0;
 carousel();
 
+// changes image every 4 seconds
 function carousel() {
     var i;
-    var x = document.getElementsByClassName("HomeSlideshow");
+    var x = document.getElementsByClassName("Slideshow");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 6000);
+    index++;
+    if (index > x.length) {index = 1}
+    x[index-1].style.display = "block";
+    setTimeout(carousel, 4000);
 }
 </script>
 
