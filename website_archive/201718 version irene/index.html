@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>Swarthmore Christian Fellowship</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.Slideshow {display: none}
+</style>
+<head>
+  <!-- <script src="/org/scf/carousel.js"></script> -->
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div id="navbar-placeholder">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+  $.get("/org/scf/navigation.html", function(navbar){
+    $("#navbar-placeholder").replaceWith(navbar);
+  });
+  </script>
+</div>
+
+<!-- Home Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:0px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="Slideshow w3-display-container w3-center">
+    <img src="/org/scf/photos/16_17/chapter17_tree.jpg" style="width:100%" title="">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chapter Camp 2017</h3>
+      <p><b>May 13-19, 2017</b></p>
+    </div>
+  </div>
+  <div class="Slideshow w3-display-container w3-center">
+    <img src="/org/scf/photos/16_17/chapter17_woods.jpg" style="width:100%" title="">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chapter Camp 2017</h3>
+      <p><b>May 13-19, 2017</b></p>
+    </div>
+  </div>
+  <div class="Slideshow w3-display-container w3-center">
+    <img src="/org/scf/photos/16_17/banquet17_funny.jpg" style="width:100%" title="">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Welcoming Banquet 2017</h3>
+      <p><b>March 25, 2017</b></p>
+    </div>
+  </div>
+  <div class="Slideshow w3-display-container w3-center">
+    <img src="/org/scf/photos/16_17/easter17.jpg" style="width:100%" title="">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Easter Dinner 2017</h3>
+      <p><b>April 17, 2017</b></p>
+    </div>
+  </div>
+<!-- End Page Content -->
+
+<script>
+var index = 0;
+carousel();
+
+// changes image every 4 seconds
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("Slideshow");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    index++;
+    if (index > x.length) {index = 1}
+    x[index-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+</script>
+
+</body>
+</html>

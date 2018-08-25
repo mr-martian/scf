@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Who We Are</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<body>
+
+<!-- Navigation Bar -->
+<div id="navbar-placeholder">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+  $.get("/org/scf/navigation.html", function(navbar){
+    $("#navbar-placeholder").replaceWith(navbar);
+  });
+  </script>
+</div>
+
+<!--Page content -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
+  <h2 class="w3-wide">SWARTHMORE CHRISTIAN FELLOWSHIP</h2>
+  <p class="w3-opacity"><i>A chapter of InterVarsity Christian Fellowship USA</i></p>
+  <p class="w3-justify">
+    We are a multi-ethnic, cross-denominational, student-led ministry that seeks to love and glorify Jesus Christ through vibrant community.
+    We meets throughout the week in a variety of settings, including small group bible studies, large group fellowship, and prayer gatherings, and service events.
+    We welcome everyone to join the fellowship regardless of background or belief.
+    We are a chapter of the non-denominational InterVarsity Christian Fellowship ministry.
+  </p>
+  <!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+  $.get("/org/scf/footer.html", function(footer){
+    $("#footer-placeholder").replaceWith(footer);
+  });
+  </script>
+</div>
+
+</body>
+</html>

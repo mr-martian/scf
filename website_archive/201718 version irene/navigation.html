@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>SCF Navigation Bar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
+<body>
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-black w3-card"> <!--makes it black-->
+  <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  <a href="/org/scf/index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-padding-large w3-button" title="About">ABOUT<i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="/org/scf/about/who.html" class="w3-bar-item w3-button">WHO WE ARE</a>
+      <a href="/org/scf/about/sofaith.html" class="w3-bar-item w3-button">STATEMENT OF FAITH</a>
+      <a href="/org/scf/about/history.html" class="w3-bar-item w3-button">HISTORY</a>
+      <a href="/org/scf/about/charter.html" class="w3-bar-item w3-button">CHARTER</a>
+      <a href="/org/scf/about/iv.html" class="w3-bar-item w3-button">INTERVARSITY</a>
+    </div>
+  </div>
+  <a href="/org/scf/weekly/sg.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SMALL GROUP</a>
+  <a href="/org/scf/weekly/lg.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LARGE GROUP</a>
+  <a href="/org/scf/weekly/pg.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRAYER</a>
+  <a href="/org/scf/weekly/service.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICE</a>
+  <a href="/org/scf/weekly/churches.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHURCH</a>
+  <a href="/org/scf/seasonal/retreats.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RETREAT</a>
+  <a href="/org/scf/contact/contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-padding-large w3-button" title="Archive">ARCHIVE<i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <!-- <a href="/org/scf/archive/1718.html" class="w3-bar-item w3-button">2017-2018</a> -->
+      <a href="/org/scf/archive/1617.html" class="w3-bar-item w3-button">2016-2017</a>
+      <a href="/org/scf/archive/1516.html" class="w3-bar-item w3-button">2015-2016</a>
+    </div>
+  </div>
+  <!-- search button -->
+  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Navbar on small screens -->
+<!-- <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+  <a href="#sg" class="w3-bar-item w3-button w3-padding-large">SMALL GROUP</a>
+  <a href="#lg" class="w3-bar-item w3-button w3-padding-large">LARGE GROUP</a>
+  <a href="#prayer" class="w3-bar-item w3-button w3-padding-large">PRAYER GATHERING</a>
+  <a href="#service" class="w3-bar-item w3-button w3-padding-large">SERVICE</a>
+  <a href="#retreat" class="w3-bar-item w3-button w3-padding-large">RETREATS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+</div> -->
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
