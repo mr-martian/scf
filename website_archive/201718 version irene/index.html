@@ -71,7 +71,7 @@ function carousel() {
        x[i].style.display = "none";
     }
     index++;
-    if (index > x.length) {index = 1}
+    if (index > x.length) {index = 1} // go back to the first image
     x[index-1].style.display = "block";
     setTimeout(carousel, 4000);
 }
