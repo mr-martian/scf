@@ -1,34 +1,57 @@
 body {
+<<<<<<< HEAD
   margin: 15px;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   color: white;
   background-color: black
+=======
+  margin: 100px 250px;
+  font-family: "Comic Sans MS", Helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+>>>>>>> 48836de395cdb2d9be331686769ce227b7071d16
   text-decoration: none
 }
 
 div#header {
   text-align:center;
+<<<<<<< HEAD
 }
 
 div#header#navigation {
   font-size: 48px;
+=======
+  font-size: 28px;
+>>>>>>> 48836de395cdb2d9be331686769ce227b7071d16
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 20px;
-  border-bottom: double;
+  border: double;
   margin: auto;
 }
 
 h1 {
+<<<<<<< HEAD
   font-size: 32px;
   text-decoration: underline;
 }
 
 h2 {
   font-size: 24px;
+=======
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: left;
+
+>>>>>>> 48836de395cdb2d9be331686769ce227b7071d16
 }
 
 h3 {
