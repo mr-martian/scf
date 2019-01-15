@@ -1,75 +1,89 @@
+/* import font from Google API */
+@import url('http://fonts.googleapis.com/css?family=Karla');
+
+/* define custom variables */
+:root {
+  --garnet: #781c2e;
+  --midnightblue: #191970;
+  --golden: #f7ad13;
+  --slategray: #99AABB;
+  --darkslategray: #556677;
+}
+
+/* header */
+div#header {
+  display: block;
+  position: absolute;
+  height: 75px;
+  width: 100%;
+  background-color: var(--garnet);
+  text-align:center;
+  border: 8px double var(--golden);
+}
+
+div#navigation {
+  font-family: 'Karla', serif;
+  font-size: 28px;
+  font-color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* body */
 body {
-<<<<<<< HEAD
-  margin: 15px;
-  font-family: Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
   font-size: 16px;
   color: white;
   background-color: black
-=======
-  margin: 100px 250px;
-  font-family: "Comic Sans MS", Helvetica, sans-serif;
-  font-size: 16px;
-  color: black;
->>>>>>> 48836de395cdb2d9be331686769ce227b7071d16
-  text-decoration: none
 }
 
-div#header {
-  text-align:center;
-<<<<<<< HEAD
+/* page content */
+#content {
+  padding: 100px 50px;
 }
 
-div#header#navigation {
-  font-size: 48px;
-=======
-  font-size: 28px;
->>>>>>> 48836de395cdb2d9be331686769ce227b7071d16
-  font-weight: bold;
-  text-align: center;
+/* hyperlink */
+a.link-header {
+  color: inherit;
   text-decoration: none;
-  text-transform: uppercase;
-  border: double;
-  margin: auto;
 }
 
+a.link-header:hover {
+  color: var(--midnightblue);
+}
+
+a.link-header:active {
+  color: var(--golden);
+}
+
+a{
+  color: var(--slategray);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--darkslategray);
+}
+
+/* list */
+ul, li {
+  list-style: none;
+}
+
+/* headings */
 h1 {
-<<<<<<< HEAD
   font-size: 32px;
-  text-decoration: underline;
 }
 
 h2 {
   font-size: 24px;
-=======
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 32px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 20px;
-  text-align: left;
-
->>>>>>> 48836de395cdb2d9be331686769ce227b7071d16
 }
 
 h3 {
   font-size: 18px;
-}
-
-ul.a {
-    list-style-type: circle;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-/* Applies to all elements with <... class="someclass"> specified. */
-.someclass {
-  color: red;
-}
-
-/* Applies to the element with <... id="someid"> specified. */
-#someid {
-  color: green;
 }
