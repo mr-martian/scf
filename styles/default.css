@@ -85,6 +85,55 @@ h2 {
   font-size: 24px;
 }
 
-h3 {
-  font-size: 18px;
+/* parallax */
+.parallax-photo {
+  /* background-image: url("../photos/16_17/easter17.jpg"); */
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-text {
+  margin: 0px auto;
+  padding: 20px;
+  border-top: 6px solid var(--golden);
+  border-bottom: 6px solid var(--golden);
+}
+
+#weekly-sg {
+    /* background-image: url("../photos/16_17/banquet17_funny.jpg"); */
+}
+
+#weekly-lg {
+    /* background-image: url("../photos/16_17/chapter17_tree.jpg"); */
+}
+
+#weekly-prayer {
+    /* background-image: url("../photos/16_17/chapter17_woods.jpg"); */
+}
+
+#weekly-service {
+    /* background-image: url("../photos/16_17/banquet17_funny.jpg"); */
+}
+
+#weekly-church {
+    /* background-image: url("../photos/16_17/banquet17_funny.jpg"); */
+}
+
+#retreats-fall {
+    /* background-image: url("../photos/16_17/banquet17_funny.jpg"); */
+}
+
+#retreats-spring {
+    /* background-image: url("../photos/16_17/chapter17_tree.jpg"); */
+}
+
+#retreats-chapter {
+    /* background-image: url("../photos/16_17/chapter17_woods.jpg"); */
+}
+
+#retreats-urbana {
+    /* background-image: url("../photos/16_17/banquet17_funny.jpg"); */
 }
