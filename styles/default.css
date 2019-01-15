@@ -46,8 +46,7 @@ body {
 
 /* page content */
 #content {
-  padding: 100px 50px;
-  text-align: center;
+  padding: 100px 20% 100px 20%;
 }
 
 /* hyperlink */
