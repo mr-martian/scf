@@ -17,7 +17,7 @@ div#header {
   height: 91px;
   width: 100%;
   box-sizing: border-box;
-  min-width: 1050px;
+  min-width: 950px;
   background-color: var(--garnet);
   text-align:center;
   border: 8px double var(--golden);
