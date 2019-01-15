@@ -47,6 +47,7 @@ body {
 /* page content */
 #content {
   padding: 100px 50px;
+  text-align: center;
 }
 
 /* hyperlink */
@@ -137,4 +138,14 @@ h2 {
 
 #retreats-urbana {
     /* background-image: url("../photos/16_17/banquet17_funny.jpg"); */
+}
+
+.Slideshow p {
+  text-align: center;
+}
+.Slideshow img {
+  margin: auto;
+  display: block;
+  max-height: 600px;
+  max-width: 100%;
 }
