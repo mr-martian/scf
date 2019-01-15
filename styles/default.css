@@ -14,8 +14,9 @@
 div#header {
   display: block;
   position: absolute;
-  height: 75px;
+  height: 91px;
   width: 100%;
+  box-sizing: border-box;
   min-width: 1050px;
   background-color: var(--garnet);
   text-align:center;
